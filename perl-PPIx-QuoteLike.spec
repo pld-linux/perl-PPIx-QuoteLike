@@ -4,7 +4,6 @@
 #
 %define		pdir	PPIx
 %define		pnam	QuoteLike
-%include	/usr/lib/rpm/macros.perl
 Summary:	PPIx::QuoteLike - Parse Perl string literals and string-literal-like things
 Name:		perl-PPIx-QuoteLike
 Version:	0.006
