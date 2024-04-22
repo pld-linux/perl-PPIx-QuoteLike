@@ -47,6 +47,9 @@ rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a eg $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
+%{__sed} -i -e '1s,/usr/bin/env perl,/usr/bin/perl,' \
+	$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/eg/pqldump
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
