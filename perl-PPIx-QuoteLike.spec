@@ -6,13 +6,13 @@
 %define		pnam	QuoteLike
 Summary:	PPIx::QuoteLike - Parse Perl string literals and string-literal-like things
 Name:		perl-PPIx-QuoteLike
-Version:	0.006
-Release:	2
+Version:	0.023
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	https://cpan.metacpan.org/authors/id/W/WY/WYANT/PPIx-QuoteLike-%{version}.tar.gz
-# Source0-md5:	9ecce45ae1a38cf6fb2df4d3ae7be450
+# Source0-md5:	551890e6c65a3eb0f4b753ad4288acb2
 URL:		https://metacpan.org/release/PPIx-QuoteLike/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -48,7 +48,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a eg $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__sed} -i -e '1s,/usr/bin/env perl,%{__perl},' \
-	$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/eg/pqldump
+	$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/eg/*
 
 %clean
 rm -rf $RPM_BUILD_ROOT
