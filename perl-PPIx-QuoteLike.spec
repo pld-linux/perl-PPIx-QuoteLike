@@ -18,6 +18,7 @@ URL:		https://metacpan.org/dist/PPIx-QuoteLike
 BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-PPI >= 1.117
 %endif
