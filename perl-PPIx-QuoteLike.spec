@@ -7,13 +7,13 @@
 Summary:	PPIx::QuoteLike - Parse Perl string literals and string-literal-like things
 Summary(pl.UTF-8):	PPIx::QuoteLike - analiza literałów tekstowych Perla i rzeczy do nich podobnych
 Name:		perl-PPIx-QuoteLike
-Version:	0.023
+Version:	0.024
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	https://www.cpan.org/authors/id/W/WY/WYANT/PPIx-QuoteLike-%{version}.tar.gz
-# Source0-md5:	551890e6c65a3eb0f4b753ad4288acb2
+# Source0-md5:	b32e22eee1fadb036a7d8e4c238e2869
 URL:		https://metacpan.org/dist/PPIx-QuoteLike
 BuildRequires:	perl-ExtUtils-MakeMaker
 BuildRequires:	perl-devel >= 1:5.8.0
